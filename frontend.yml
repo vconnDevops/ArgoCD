@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: shoes
-        image: kanwarsaad/shoes:v1
+        image: kanwarsaad/shoes:v8
         ports:
         - containerPort: 3000
