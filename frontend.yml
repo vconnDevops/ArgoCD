@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: shoes
-        image: kanwarsaad/shoes:v2
+        image: kanwarsaad/shoes:"${params.TAG}"
         ports:
         - containerPort: 3000
