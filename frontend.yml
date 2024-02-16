@@ -1,0 +1,22 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: shoes
+  labels:
+    app: shoes
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: shoes
+  template:
+    metadata:
+      labels:
+        app: shoes
+    spec:
+      containers:
+      - name: shoes
+        image: kanwarsaad/shoes:latest
+        ports:
+        - containerPort: 3000
